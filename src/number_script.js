@@ -44,7 +44,7 @@ function guessNumber() {
                 case number == lucky_number:
                     
                     // Mostra il modale di vittoria
-                    var win_modal = new bootstrap.Modal(document.getElementById("win_modal"));
+                    var win_modal = bootstrap.Modal.getOrCreateInstance('#win_modal');
                     win_modal.show();
                     if(parseInt(document.getElementById("record3").innerText)>=parseInt(max_tries))
                     {
